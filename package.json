@@ -1,0 +1,42 @@
+{
+  "name": "nightwatch-gui",
+  "version": "0.0.1",
+  "description": "Nightwatch GUI",
+  "main": "main.js",
+  "scripts": {
+    "compile": "tsc -p ./tsconfig.json",
+    "html": "cp ./index.html ./out",
+    "package": "cp ./package.json ./out",
+    "start": "npm run compile && npm run package && electron ./out",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "build": {
+    "appId": "com.jasonhaxstuff.nightwatchgui",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "productName": "Nightwatch GUI",
+    "copyright": "Copyright © 2018 JasonHaxStuff",
+    "icon": "nightwatch"
+  },
+  "author": "jasonhaxstuff",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/node": "^10.5.5",
+    "electron": "^3.0.0-beta.4",
+    "electron-builder": "^20.26.1",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^7.1.0"
+  },
+  "dependencies": {
+    "typescript": "^3.0.1"
+  }
+}

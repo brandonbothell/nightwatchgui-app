@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "out",
+    "rootDir": "",
+    "sourceMap": false
+  },
+  "include": [
+    "renderer.ts",
+    "main.ts",
+    "util",
+    "template.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "out"
+  ]
+}
